@@ -13,7 +13,8 @@ namespace Varianta_1
             //IndentificareaElemenului();
             //IndentificareaMaxElement();
             //NumarulDubluri();
-            ReuniuneaVectorilor();
+            //ReuniuneaVectorilor();
+            DiagonalaPrincipala();
         }
 
         public static void IndentificareaElemenului()
@@ -130,6 +131,21 @@ namespace Varianta_1
             foreach (int element in myArray)
             {
                 Console.WriteLine(element + " ");
+            }
+        }
+
+        public static void DiagonalaPrincipala()
+        {
+            int[,] myArray =
+            {
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
+            };
+
+            for(int i = 0; i < myArray.GetLength(0); i++)
+            {
+                Console.WriteLine(myArray[i,i]);
             }
         }
     }
